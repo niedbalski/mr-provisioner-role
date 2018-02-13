@@ -101,8 +101,6 @@
     dest: "/etc/systemd/system/{{item}}.service"
   with_items:
     - "{{mr_provisioner_services}}"
-  notify:
-    - start mr-provisioner services
 
 - name: Install bootstrap-provisioner script
   template:
