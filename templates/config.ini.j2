@@ -14,7 +14,7 @@ netboot_templates_dir =
 max_upload_size = 1073741824
 
 [tools]
-ipmitool = /usr/bin/ipmitool
+ipmitool = {{mr_provisioner_ipmitool_path}}
 
 [database]
 uri = postgresql+psycopg2://{{mr_provisioner_db_user}}:{{mr_provisioner_db_pass}}@localhost/{{mr_provisioner_db_name}}
