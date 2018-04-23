@@ -8,6 +8,7 @@ mr_provisioner_ws_subprocess_source: "https://github.com/bwalex/ws-subprocess/re
 mr_provisioner_tftp_http_proxy_version: "0.3"
 mr_provisioner_tftp_http_proxy_source: "https://github.com/niedbalski/tftp-http-proxy/releases/download/v{{mr_provisioner_tftp_http_proxy_version}}/tftp-http-proxy"
 mr_provisioner_kea_plugin_version: "0.1"
+mr_provisioner_pip_version: "9.0.1"
 mr_provisioner_venv_path: "{{mr_provisioner_path}}/venv"
 mr_provisioner_config: "/etc/mr-provisioner.ini"
 mr_provisioner_banner: "test provisioner"

@@ -51,7 +51,7 @@
     virtualenv_python: python3.5
 
 - name: Run mr-provisioner setup.py install
-  shell: "cd {{mr_provisioner_build_path}}/mr-provisioner-{{mr_provisioner_version}} && {{mr_provisioner_venv_path}}/bin/python setup.py install"
+  shell: "{{mr_provisioner_venv_path}}/bin/python -m pip install pip=={{mr_provisioner_pip_version}} && cd {{mr_provisioner_build_path}}/mr-provisioner-{{mr_provisioner_version}} && {{mr_provisioner_venv_path}}/bin/python setup.py install"
 
 - name: Workaround for https://github.com/Linaro/mr-provisioner/issues/71
   shell: echo "{{mr_provisioner_version}}" > "{{mr_provisioner_venv_path}}/lib/python3.5/site-packages/mr_provisioner-{{mr_provisioner_version}}-py3.5.egg/VERSION"
